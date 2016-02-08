@@ -32,21 +32,24 @@ while(count <= 100)
 
 //chess board exercise
 
-var count = 0;
 var size = 8;
+var b = "";
 
-while (count < 64){ //8 X 8 grid equals 64
-  if(count % 2 == 0){
-  console.log(" "); //logs a space
+for (i = 0; i < size; i++){
+  for (j = 0; j < size; j++){
+  if((i + j) % 2 == 0){
+  b +=" "; //logs a space
   }
   else{
-    console.log("#"); //logs the hashtag
+    b+="#"; //logs the hashtag
   }
+  }
+  b += "\n" //adds new line once exits inner loop
+}
+  console.log(b); //once finished displays the completed board
+
   
-  if (count % size == 0){ 
-    console.log("/n"); //once the board has hit 8 characters creates a new line
-  }
-  count++;
+
 }
 
 //end
