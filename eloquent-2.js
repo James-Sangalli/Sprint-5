@@ -1,12 +1,9 @@
 //looping a triangle
 
-var length = 28; //total length of all #
-var squares = #;
+var length = 8; //total length of all #
 
-
-for (i =0; i<length;i++){
+for (squares ='#'; squares.length < length ;squares += '#'){
   console.log(squares);
-  squares += #;
 }
 
 //end of triangle exercise
