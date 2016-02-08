@@ -12,15 +12,16 @@ for (squares ='#'; squares.length < length ;squares += '#'){
 
 var count = 1;
 
-while(count < 100){
-  if (count % 3==0){ //if divisible by 3
+while(count <= 100)
+{
+  if (count % 5 == 0 && count % 3 ==0){ //if both
+    console.log("FizzBuzz");
+  }
+  else if (count % 3==0){ //if divisible by 3
     console.log("Fizz");
   }
   else if (count % 5 == 0){ //if divisible by 5
     console.log("Buzz");
-  }
-  else if (count % 5 == 0 && count % 3 ==0){ //if both
-    console.log("FizzBuzz");
   }
   else{
     console.log(count); //else log the number
